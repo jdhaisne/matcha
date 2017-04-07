@@ -1,0 +1,9 @@
+//- statut.pug
+extends layout.pug
+
+block content
+	h1= title
+	if logged
+		span= 'hello ' + pseudo 	
+	else
+		span you're not logged

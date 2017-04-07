@@ -1,0 +1,12 @@
+//- login.pug
+extends layout.pug
+
+block content
+	h1= title
+	#login-form
+		form(action="/login" method="POST")
+			span pseudo:
+				input(type="text" name="pseudo")
+			span password:
+				input(type="password" name="password")
+			input(type="submit" name="submit")
